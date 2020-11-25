@@ -1,16 +1,27 @@
+#CPS:
+def fib_c(n, f):
+    pass
 
+<<<<<<< HEAD
 #Tail recursion implementation:
 def fib_a(n, a=[1, 1]):
     if n == 0 or n == 1:
         #return a =
         pass
     
+=======
+
+
+#Tail recursion:
+def fib_a(n, a=[0, 0, 1 ]):
+    pass
+>>>>>>> 0980321a7ebb18f480fc9d57c997242d508b61e7
     
     
 
 
 
-#Traditional recursive implementation:
+#Traditional recursion:
 def fib_r(n):
     if n == 0 or n == 1:
         return 1
@@ -18,7 +29,7 @@ def fib_r(n):
 
 
 
-#Iterative implementation:
+#Iterative:
 def fib_l(n):
     current = 1
     previous1 = 0
