@@ -1,6 +1,9 @@
 
 #Tail recursion implementation:
-def fib_a(n, a=[0, 0, 1 ]):
+def fib_a(n, a=[1, 1]):
+    if n == 0 or n == 1:
+        #return a =
+        pass
     
     
     
@@ -27,3 +30,5 @@ def fib_l(n):
         current = previous1 +previous2
     
     return current
+for i in range(10):
+    print(fib_l(i))
