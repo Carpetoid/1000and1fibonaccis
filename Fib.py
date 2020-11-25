@@ -18,8 +18,6 @@ def fib_r(n):
         return 1
     return fib_r(n-1) + fib_r(n-2)
 
-for i in range(10):
-    print(fib_r(i))
 
 #Iterative:
 def fib_l(n):
@@ -32,7 +30,6 @@ def fib_l(n):
         previous1 = current
         current = previous1 +previous2
     return current
-for i in range(10):
-    print(fib_l(i))
+
     
   
