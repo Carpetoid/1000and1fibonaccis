@@ -1,5 +1,10 @@
+#CPS:
+def fib_c(n, f):
+    pass
 
-#Tail recursion implementation:
+
+
+#Tail recursion:
 def fib_a(n, a=[0, 0, 1 ]):
     pass
     
@@ -7,7 +12,7 @@ def fib_a(n, a=[0, 0, 1 ]):
 
 
 
-#Traditional recursive implementation:
+#Traditional recursion:
 def fib_r(n):
     if n == 0 or n == 1:
         return 1
@@ -15,7 +20,7 @@ def fib_r(n):
 
 
 
-#Iterative implementation:
+#Iterative:
 def fib_l(n):
     current = 1
     previous1 = 0
