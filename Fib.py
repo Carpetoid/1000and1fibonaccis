@@ -1,7 +1,7 @@
 
 #Tail recursion implementation:
 def fib_a(n, a=[0, 0, 1 ]):
-    
+    pass
     
     
 
