@@ -3,7 +3,7 @@ def fib_c(n, f):
     pass
 
 
-#Tail recursion:
+#Tail recursion, polynomial complexity O(n^2):
 def fib_a(n, a=[0, 0, 1]):
     
     if n == 0:
@@ -16,14 +16,14 @@ def fib_a(n, a=[0, 0, 1]):
     return fib_a(n-1, a)
 
 
-#Traditional recursion:
+#Traditional recursion, explonential complexity O(2^n) :
 def fib_r(n):
     if n == 0 or n == 1:
         return 1
     return fib_r(n-1) + fib_r(n-2)
 
 
-#Iterative:
+#Iterative, linear complexity O(n):
 def fib_l(n):
     current = 1
     previous1 = 0
