@@ -2,6 +2,16 @@
 def fib_c(n, f):
     pass
 
+#Memoization, linear complexity O(n):
+def fib_m(n, memo_dict={}):
+    if n == 0 or n == 1:
+        return 1
+    try:
+        return memo_dict[n]
+    except KeyError:
+        memo = fib_m(n-1, memo_dict) + fib_m(n-2, memo_dict)
+        memo_dict[n] = memo
+        return memo
 
 #Tail recursion, linear complexity O(n):
 def fib_t(n, a=[0, 0, 1]):
