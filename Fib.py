@@ -12,7 +12,8 @@ def fib_m(n, memo_dict={}):
         memo = fib_m(n-1, memo_dict) + fib_m(n-2, memo_dict)
         memo_dict[n] = memo
         return memo
-
+for i in range(30):
+    print(fib_m(i))
 #Tail recursion, linear complexity O(n):
 def fib_t(n, a=[0, 0, 1]):
     
@@ -32,7 +33,7 @@ def fib_r(n):
         return 1
     return fib_r(n-1) + fib_r(n-2)
 
-#Iterative, linear complexity O(n):
+#Tabulation, linear complexity O(n):
 def fib_i(n):
     current = 1
     previous1 = 0
